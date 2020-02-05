@@ -1,0 +1,554 @@
+.header {
+  padding: 20px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.headerLayout{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  max-width: 975px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo_link a {
+  display: block;
+  padding-left: 38px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: left center;
+}
+
+.headerLogo_link span:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 31px;
+  margin-top: -15.5px;
+  background-color: #666;
+  content: '';
+}
+
+.headerLogo_link span {
+  display: block;
+  position: relative;
+  width: 103px;
+  height: auto;
+  padding-left: 14px;
+}
+
+.headerLogo_link span>img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.headerSerch{
+  width: 215px;
+  height: 28px;
+}
+
+.headerSerch input{
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  padding: 4px;
+  font-size: 14px;
+  background-color: #fafafa;
+  border: solid 1px #dbdbdb;
+}
+
+.headerSerch input::placeholder{
+  text-align: center;
+}
+
+.headerMenu ul{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.headerMenu li{
+  width: 24px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+.headerMenu li:last-child{
+  margin-right: 0;
+}
+
+.headerMenu li>a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: 24px auto;
+  background-image: url("../img/heart.png")
+}
+
+.headerMenu li:first-child>a{
+  background-image: url("../img/explore.png")
+}
+
+.headerMenu li:last-child>a{
+  background-image: url("../img/profile.png")
+}
+
+.section {
+  position: relative;
+  max-width: 975px;
+  margin: 70px auto 0;
+}
+
+.sectionLeft>div{
+  margin-top: 50px;
+}
+
+.sectionLeft>div:first-child{
+  margin-top: 0;
+}
+
+.sectionFeed {
+  width: 66%;
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+}
+
+.sectionLeft .sectionProfile {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 68px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionLeft .sectionProfile .sectionProfile_wrap{
+  margin-left: 15px;
+}
+
+.sectionLeft .sectionProfile .sectionProfile_wrap>dt,.sectionLeft  .sectionProfile .sectionProfile_wrap>dd {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sectionLeft .sectionProfile .sectionProfile_thumnail{
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+.sectionLeft .sectionProfile .sectionProfile_thumnail>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sectionLeft .sectionProfile .sectionProfile_thumnail img{
+  width: 100%;
+}
+
+.sectionLeft .sectionProfile .sectionProfile_id>a {
+  font-weight: 600;
+}
+
+.sectionLeft .sectionProfile .sectionProfile_button{
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/more.png");
+  background-size: 32px;
+}
+
+.sectionPicture img{
+  display: block;
+   width: 100%;
+   height: auto;
+}
+
+.sectionIcon {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+.sectionIcon .sectionIcon_list{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.sectionIcon .sectionIcon_list>li {
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+}
+
+.sectionIcon .sectionIcon_list li:first-child{
+  margin-left: 0;
+}
+
+.sectionIcon .sectionIcon_list button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/comment.png");
+  background-size: 24px;
+}
+
+.sectionIcon .sectionIcon_list li:first-child button {
+  background-image: url("../img/heart2.png");
+}
+
+.sectionIcon .sectionIcon_list li:last-child button {
+  background-image: url("../img/share.png");
+}
+
+.sectionIcon .sectionIcon_bookMark {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.sectionIcon .sectionIcon_bookMark button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/bookmark.png");
+  background-size: 24px;
+}
+
+.sectionLike {
+  padding: 0 10px;
+}
+
+.sectionLike p{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sectionLike p>span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/profile2.jpg");
+  border-radius: 50%;
+  background-size: 15px;
+}
+
+.sectionLike p>em {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  vertical-align: top;
+}
+
+.sectionLike p>em:last-child{
+  margin-left: 5px;
+}
+
+.sectionText,.sectionReply{
+  margin-top: 5px;
+  padding: 0 10px;
+}
+
+.sectionText a,.sectionReply a{
+  display: inline-block;
+  font-weight: 600;
+}
+
+.sectionReply a{
+  margin-right: 6px;
+}
+
+.sectionText p,.sectionReply p{
+  display: inline;
+}
+
+.sectionReply p{
+  cursor: pointer;
+}
+
+.sectionText .sectionText_button{
+  font-size: 15px;
+  color: #a5a5a5;
+}
+
+.sectionReply {
+  margin: 10px 0 5px;
+}
+
+.sectionReply>ul {
+  margin-bottom: 5px;
+}
+
+.sectionReply>ul>li{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionReply>ul>li .sectionReply_heart{
+  width: 14px;
+  height: 14px;
+  margin-left: auto;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/heart2.png");
+  -webkit-background-size: 14px;
+  background-size: 14px;
+
+}
+
+.sectionReply .sectionTime {
+  font-size: 13px;
+  color: #a2a2a2;
+}
+
+.sectionIput {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 45px;
+  border-top: 1px solid #f3f3f3;
+  justify-content: space-between;
+}
+
+.sectionIput>input{
+  width: calc(100% - 70px);
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.sectionIput>button {
+  width: 50px;
+  font-size: 14px;
+  color: #0791ff;
+  opacity: 0.4;
+}
+
+.sectionIput .sectionIput_button.on{
+  opacity: 1;
+}
+
+.sectionRight{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+}
+
+.sectionRight .sectionProfile{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sectionRight .sectionProfile_image,.sectionRight .sectionRecomm_image{
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.sectionRight .sectionProfile_image>img,.sectionRight .sectionRecomm_image>img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sectionRight .sectionProfile_text>dt{
+  font-weight: 600;
+}
+
+.sectionRight .sectionProfile_text>dd{
+  color: #acacac;
+}
+
+.sectionStory {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 170px;
+  margin-top:  20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+}
+
+.sectionRecomm {
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+}
+
+.sectionStory_title,.sectionRecomm_title{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sectionStory_list li{
+  margin-bottom: 10px;
+}
+
+.sectionStory_list li:last-child{
+  margin-bottom: 0;
+}
+
+.sectionStory_list>li>a {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+
+}
+
+.sectionStory_title em,.sectionRecomm_title em{
+  color: #b1b1b1;
+  font-style: normal;
+}
+
+.sectionStory_list .sectionStory_text span{
+  color: #a9a9a9;
+}
+
+.sectionStory_border{
+  margin-right: 12px;
+  padding: 2px;
+  background:
+linear-gradient(#fff,#fff) padding-box, /*this is your grey background*/
+linear-gradient(to right, #9c20aa, #fb3570) border-box;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.sectionStory_image{
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.sectionStory_image>img {
+  width: 100%;
+  height: auto;
+}
+
+.sectionRecomm_list>li {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.sectionRecomm_list>li:last-child{
+  margin-bottom: 0;
+}
+
+.sectionRecomm_list li>a{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sectionRecomm_list li>a .sectionRecomm_text{
+  width: 140px;
+}
+
+.sectionRecomm_list li>a .sectionRecomm_text>em {
+  font-style: normal;
+  font-weight: 600;
+}
+.sectionRecomm_list li>a .sectionRecomm_text>span{
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  color: #aaa;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.sectionRecomm_list li .sectionRecomm_button{
+  font-size: 14px;
+  color: #52a4f2;
+  font-weight: 600;
+}
+
+.sectionFooter_Menu {
+  margin-top: 20px;
+}
+
+.sectionFooter_Menu ul{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sectionFooter_Menu ul>li{
+  position: relative;
+  margin-right: 5px;
+  padding-right: 8px;
+}
+
+.sectionFooter_Menu li:after{
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2px;
+  height: 2px;
+  margin-top: -3px;
+  background-color: #cacaca;
+  border-radius: 50%;
+  content: '';
+}
+
+.sectionFooter_Menu li:last-child:after{
+  display: none;
+}
+
+.sectionFooter_Menu li>a{
+  display: inline-block;
+  color: #d6d6d6;
+}
+
+.sectionFooter_Menu p{
+  margin-top:  25px;
+  color: #d6d6d6;
+}
