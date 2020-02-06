@@ -46,9 +46,9 @@ function inputFunc(e){
     replyInput.value = "";
     replyButton.classList.remove("on");
     replyListP=document.querySelectorAll(".sectionReply_list li>p");
-    p.onclick=function(){
+    p.addEventListener("click",function(e){
       this.parentElement.remove();
-    }
+    });
 
   }
 }
