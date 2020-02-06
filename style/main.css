@@ -23,7 +23,7 @@
   background-position: left center;
 }
 
-.headerLogo_link span:before {
+.headerLogo_link span::before {
   display: block;
   position: absolute;
   top: 50%;
@@ -171,8 +171,8 @@
 
 .sectionPicture img{
   display: block;
-   width: 100%;
-   height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .sectionIcon {
@@ -379,7 +379,7 @@
   border-radius: 50%;
 }
 
-.sectionRight .sectionProfile_image>img,.sectionRight .sectionRecomm_image>img{
+.sectionRight .sectionProfile_image img,.sectionRight .sectionRecomm_image img{
   display: block;
   width: 100%;
   height: auto;
